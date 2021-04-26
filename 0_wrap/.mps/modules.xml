@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/SampleForWrapGrammarCells/SampleForWrapGrammarCells.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/SampleForWrapVanilla/SampleForWrapVanilla.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/SampleForWrapVanilla/sandbox/SampleForWrap.sandbox.msd" folder="" />
     </projectModules>
