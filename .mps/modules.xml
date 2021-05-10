@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/0_wrap/languages/SampleForWrapGrammarCells/SampleForWrapGrammarCells.mpl" folder="1_wrap" />
+      <modulePath path="$PROJECT_DIR$/0_wrap/languages/SampleForWrapVanilla/SampleForWrapVanilla.mpl" folder="1_wrap" />
+      <modulePath path="$PROJECT_DIR$/0_wrap/languages/SampleForWrapVanilla/sandbox/SampleForWrap.sandbox.msd" folder="1_wrap" />
+      <modulePath path="$PROJECT_DIR$/languages/SampleForFlag/SampleForFlag.mpl" folder="2_flag" />
+      <modulePath path="$PROJECT_DIR$/languages/SampleForFlag/sandbox/SampleForFlag.sandbox.msd" folder="2_flag" />
+      <modulePath path="$PROJECT_DIR$/languages/SampleForOptional/SampleForOptional.mpl" folder="3_optional" />
+      <modulePath path="$PROJECT_DIR$/languages/SampleForOptional/sandbox/SampleForOptional.sandbox.msd" folder="3_optional" />
+    </projectModules>
+  </component>
+</project>

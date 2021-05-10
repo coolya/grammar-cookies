@@ -79,6 +79,10 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -89,7 +93,9 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+        <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
+      <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
@@ -103,6 +109,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
+      <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
     </language>
   </registry>
   <node concept="24kQdi" id="3narFxVEkpi">
@@ -128,6 +141,23 @@
             </node>
             <node concept="2iRfu4" id="3narFxVEA0U" role="2iSdaV" />
           </node>
+          <node concept="ZYGn8" id="3narFxVN0iW" role="ZWbT9">
+            <node concept="3clFbS" id="3narFxVN0iX" role="2VODD2">
+              <node concept="3clFbF" id="3narFxVLr71" role="3cqZAp">
+                <node concept="2ShNRf" id="3narFxVLW5W" role="3clFbG">
+                  <node concept="Tc6Ow" id="3narFxVLWf2" role="2ShVmc">
+                    <node concept="17QB3L" id="3narFxVLWyX" role="HW$YZ" />
+                    <node concept="Xl_RD" id="3narFxVLX7d" role="HW$Y0">
+                      <property role="Xl_RC" value="with alternate name" />
+                    </node>
+                    <node concept="Xl_RD" id="3narFxVLXor" role="HW$Y0">
+                      <property role="Xl_RC" value="alternate" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="_tjkj" id="3narFxVEkpK" role="3EZMnx">
           <node concept="3EZMnI" id="3narFxVEkpS" role="_tjki">
@@ -144,7 +174,7 @@
         <node concept="_tjkj" id="3narFxVE_YR" role="3EZMnx">
           <node concept="3EZMnI" id="3narFxVE_Z4" role="_tjki">
             <node concept="3F0ifn" id="3narFxVE_Zb" role="3EZMnx">
-              <property role="3F0ifm" value="implementes" />
+              <property role="3F0ifm" value="implements" />
               <ref role="1k5W1q" node="3narFxVzmSM" resolve="keyword" />
             </node>
             <node concept="3F2HdR" id="3narFxVE_Zh" role="3EZMnx">
